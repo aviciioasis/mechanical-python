@@ -22,8 +22,8 @@ guns = ['M16', 'AK47', 'M4A1', 'G36C']
 
 #第二个例子，遍历列表guns中的每个元素，指定索引起始值，
 #并输出其索引和元素本身，从索引1开始。
-#for index, gun in enumerate(guns, start=1):
-#    print(index, gun)
+for index, gun in enumerate(guns, start=1):
+    print(index, gun)
 '''该例子输出结果为：
 1 M16
 2 AK47
@@ -32,22 +32,22 @@ guns = ['M16', 'AK47', 'M4A1', 'G36C']
 即输出了列表guns中每个元素的索引和元素本身，索引从1开始'''
 
 #第三个例子，转换成列表或者词典形式，输出
-#enumerate_list = list(enumerate(guns))
-#print(enumerate_list)
+enumerate_list = list(enumerate(guns))
+print(enumerate_list)
 '''该例子输出结果为：
 [(0, 'M16'), (1, 'AK47'), (2, 'M4A1'), (3, 'G36C')]
 即输出了列表guns中每个元素的索引和元素本身，以元组形式存储在列表中'''
 
-#enumerate_dict = dict(enumerate(guns))
-#print(enumerate_dict)
+enumerate_dict = dict(enumerate(guns))
+print(enumerate_dict)
 '''该例子输出结果为：
 {0: 'M16', 1: 'AK47', 2: 'M4A1', 3: 'G36C'}
 即输出了列表guns中每个元素的索引和元素本身，以字典形式存储'''
 
 #第四个例子，遍历字符串s中的每个字符，并输出其索引和字符本身
-#s = 'Hello, World!'
-#for index, char in enumerate(s):
-#    print(index, char)
+s = 'Hello, World!'
+for index, char in enumerate(s):
+    print(index, char)
 '''该例子输出结果为：
 0 H
 1 e
@@ -69,7 +69,7 @@ guns = ['M16', 'AK47', 'M4A1', 'G36C']
 
 
 
-#help(dict(key, value))
+help(dict(key, value))
 '''dict()函数用于创建一个字典对象。
     其中key表示键，value表示值，键值对之间用冒号分隔，多个键值对之间用逗号分隔。
     需要注意的是，dict()函数创建的字典对象是无序的，即键值对的顺序是不固定的。
@@ -88,9 +88,9 @@ print(dict(key=10, value=20))
 
 
 
-#dict1 = {'a': 1, 'b': 2, 'c': 3}
-#for index, (key, value) in enumerate(dict1.items()):
-#    print(index, key, value)
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+for index, (key, value) in enumerate(dict1.items()):
+    print(index, key, value)
 '''该例子输出结果为：
 0 a 1
 1 b 2
