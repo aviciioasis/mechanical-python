@@ -11,8 +11,8 @@
 
 #第一个例子，遍历列表guns中的每个元素，并输出其索引和元素本身
 guns = ['M16', 'AK47', 'M4A1', 'G36C']
-#for index, gun in enumerate(guns):
-#    print(index, gun)
+for index, gun in enumerate(guns):
+    print(index, gun)
 '''该例子输出结果为：
 0 M16
 1 AK47
@@ -97,3 +97,14 @@ for index, (key, value) in enumerate(dict1.items()):
 2 c 3
 即输出了字典dict1中每个键值对的索引(0, 1, 2)、键(a, b, c)和
 值(1, 2, 3)'''
+
+
+dict2={'x': 10, 'y': 20, 'z': 30}
+for index, (key, value) in enumerate(dict2.items(), start=1):
+    print(index, key, value)
+'''该例子输出结果为：
+1 x 10
+2 y 20
+3 z 30
+即输出了字典dict2中每个键值对的索引(1, 2, 3)、键(x, y, z)和
+值(10, 20, 30)'''
