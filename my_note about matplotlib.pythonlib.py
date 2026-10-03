@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
     matplotlib 的主要模块是 pyplot，它提供了
     类似于 MATLAB 的绘图接口，使得用户可以轻松地创建和定制图表。'''
 
+
+
 '''在matplotlib中，图表是由多个元素组成的，包括图形（figure）、坐标
 轴（axes）、数据点（data points）等。用户可以通过调用不同的函数来创建
 和定制这些元素，从而实现各种可视化效果。'''
@@ -14,6 +16,9 @@ plt.scatter(x,y)'''这是一个用于绘制散点图的函数。'''
 plt.bar(x,height)'''这是一个用于绘制柱状图的函数。'''
 plt.hist(data,bin=10)'''这是一个用于绘制直方图的函数。'''
 plt.pie(sizes,labels=labels)'''这是一个用于绘制饼图的函数。'''
+
+
+
 
 
 
@@ -36,7 +41,6 @@ plt.ylabel('Y-axis')
 
 plt.title('My First Plot')
 '''plt.title()函数用于设置图表的标题。'''
-
 
 plt.tight_layout()
 '''plt.tight_layout()函数用于自动调整子图参数，使得图表布局

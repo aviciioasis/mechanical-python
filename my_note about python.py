@@ -1,6 +1,8 @@
 
 
-#help(enumerate)
+
+
+help(enumerate)
 '''enumerate(iterable, start=0)
     enumerate()函数用于将一个可遍历的数据对象(如列表、元组或字
     符串)组合为一个索引序列，同时列出数据和数据下标，一般用在
@@ -80,6 +82,8 @@ help(dict(key, value))
 
 
 
+
+
 dict(key=10, value=20)
 print(dict(key=10, value=20))
 '''该例子输出结果为：
@@ -108,3 +112,49 @@ for index, (key, value) in enumerate(dict2.items(), start=1):
 3 z 30
 即输出了字典dict2中每个键值对的索引(1, 2, 3)、键(x, y, z)和
 值(10, 20, 30)'''
+
+
+
+dict.items()
+'''dict.items()方法用于返回字典中的所有键值对，以元组的形式返回。
+    其中dict表示字典对象(可以是任何字典，包括自己编写的字典如前面的dict1, dict2等)，
+    items()方法返回一个包含所有键值对的视图对象，每个键值对以元组的形式表示，元组的
+    第一个元素是键，第二个元素是值。
+    需要注意的是，dict.items()方法返回的视图对象是动态的，即当字典发生
+    变化时，视图对象也会随之变化。
+    下面写一下例子'''
+
+dict3 = {'name': 'Alice', 'age': 25, 'gender': 'female'}
+for index, (key, value) in enumerate(dict3.items()):
+    print(index, key, value)
+'''该例子输出结果为：
+0 name Alice
+1 age 25
+2 gender female
+上面的输出表明：输出了字典dict3中每个键值对的索引(0, 1, 2)、
+键(name, age, gender)和后面的值(Alice, 25, female)'''
+
+
+
+
+
+
+
+
+filename=f'{dict3["name"]}_data of persons.csv'
+print(filename)
+'''该例子输出结果为：
+'filename'变量的值为'Alice_data of persons.csv'，即将字典
+dict3中键'name'对应的值'Alice'与字符串'_data of persons.csv'拼接起来，形成了一
+个新的字符串，并赋值给变量'filename'。
+
+需要注意的是，f-string是一种格式化字符串的方式，可以在字符串中嵌入变量或表达式，
+通过在字符串前加上字母'f'，并使用花括号{}将变量或表达式括起来，即可实现字符串的
+格式化输出。'''    
+
+
+
+import pandas as pd
+df = pd.DataFrame([dict3])
+df.to_csv(filename,index=False,encoding='utf-8-sig')
+print(f'{filename}已保存为csv文件')
