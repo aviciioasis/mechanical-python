@@ -141,6 +141,8 @@ for index, (key, value) in enumerate(dict3.items()):
 
 
 
+
+
 filename=f'{dict3["name"]}_data of persons.csv'
 print(filename)
 '''该例子输出结果为：
@@ -164,4 +166,5 @@ print(f'{filename}已保存为csv文件')
 需要注意的是，pandas是一个强大的数据分析库，可以方便地进行数据处理和分析，
 DataFrame是pandas中最常用的数据结构之一，可以看作是一个表格型的数据结构，类似于Excel表格。
 to_csv()方法用于将DataFrame对象保存为csv文件。
-输出的文件已经保留在当前工作目录下，可以使用os模块查看当前工作目录。'''   
+输出的文件已经保留在当前工作目录下，可以使用os模块查看当前工作目录。
+详细的部分在practice.ipynb中展示，需自行配置好python环境和pandas库。'''   
