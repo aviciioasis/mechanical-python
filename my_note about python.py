@@ -143,8 +143,6 @@ for index, (key, value) in enumerate(dict3.items()):
 
 
 
-filename=f'{dict3["name"]}_data of persons.csv'
-print(filename)
 '''该例子输出结果为：
 'filename'变量的值为'Alice_data of persons.csv'，即将字典
 dict3中键'name'对应的值'Alice'与字符串'_data of persons.csv'拼接起来，形成了一
@@ -156,6 +154,7 @@ dict3中键'name'对应的值'Alice'与字符串'_data of persons.csv'拼接起�
 
 
 
+filename = f"{dict3['name']}_data of persons.csv"
 import pandas as pd
 df = pd.DataFrame([dict3])
 df.to_csv(filename,index=False,encoding='utf-8-sig')
@@ -163,8 +162,13 @@ print(f'{filename}已保存为csv文件')
 '''该例子输出结果为：
 'Alice_data of persons.csv已保存为csv文件'，即将字典dict3转换为DataFrame对象，
 并保存为csv文件，文件名为'Alice_data of persons.csv'，不包含索引，编码格式为'utf-8-sig'。
+
 需要注意的是，pandas是一个强大的数据分析库，可以方便地进行数据处理和分析，
 DataFrame是pandas中最常用的数据结构之一，可以看作是一个表格型的数据结构，类似于Excel表格。
-to_csv()方法用于将DataFrame对象保存为csv文件。
+
+to_csv()方法用于将DataFrame对象保存为csv文件，需要配合dataframe对象使用，
+参数index表示是否保存索引，默认为True，表示保存索引，设置为False表示不保存索引，
+参数encoding表示编码格式，默认为'utf-8'，可以根据需要设置为其他编码格式。
+
 输出的文件已经保留在当前工作目录下，可以使用os模块查看当前工作目录。
 详细的部分在practice.ipynb中展示，需自行配置好python环境和pandas库。'''   
