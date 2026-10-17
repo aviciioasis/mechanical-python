@@ -11,11 +11,11 @@ import matplotlib.pyplot as plt
 '''在matplotlib中，图表是由多个元素组成的，包括图形（figure）、坐标
 轴（axes）、数据点（data points）等。用户可以通过调用不同的函数来创建
 和定制这些元素，从而实现各种可视化效果。'''
-plt.plot(x,y)'''这是一个用于绘制折线图的函数。'''
-plt.scatter(x,y)'''这是一个用于绘制散点图的函数。'''
-plt.bar(x,height)'''这是一个用于绘制柱状图的函数。'''
-plt.hist(data,bin=10)'''这是一个用于绘制直方图的函数。'''
-plt.pie(sizes,labels=labels)'''这是一个用于绘制饼图的函数。'''
+plt.plot(x, y)  # 这是一个用于绘制折线图的函数
+plt.scatter(x, y)  # 这是一个用于绘制散点图的函数
+plt.bar(x, height)  # 这是一个用于绘制柱状图的函数
+plt.hist(data, bin=10)  # 这是一个用于绘制直方图的函数
+plt.pie(sizes, labels=label)  # 这是一个用于绘制饼图的函数
 
 
 
