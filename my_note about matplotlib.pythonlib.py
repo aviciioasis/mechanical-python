@@ -49,3 +49,18 @@ plt.tight_layout()
 
 plt.show()
 '''plt.show()函数用于显示图表。它会弹出一个窗口，显示绘制的图表。'''
+
+
+'''下面为另一个例子'''
+plt.figure(figsize=(10,10))
+
+plt.title('Simulated Tensile Test Curves', fontsize=14)  
+'''此处设置图的标题为 'simulated Tensile Test Curves',同时设置字体的大小为14'''
+
+plt.legend(fontsize=11)                        # 显示图例
+
+plt.grid(True, linestyle='--', alpha=0.5)      # 显示网格线
+
+plt.tight_layout()                             # 自动调整边距，防止标签被截断
+
+plt.show()                                     # 把图画出来

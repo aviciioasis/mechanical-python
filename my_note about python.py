@@ -142,15 +142,7 @@ for index, (key, value) in enumerate(dict3.items()):
 
 
 
-
-'''该例子输出结果为：
-'filename'变量的值为'Alice_data of persons.csv'，即将字典
-dict3中键'name'对应的值'Alice'与字符串'_data of persons.csv'拼接起来，形成了一
-个新的字符串，并赋值给变量'filename'。
-
-需要注意的是，f-string是一种格式化字符串的方式，可以在字符串中嵌入变量或表达式，
-通过在字符串前加上字母'f'，并使用花括号{}将变量或表达式括起来，即可实现字符串的
-格式化输出。'''    
+  
 
 
 
